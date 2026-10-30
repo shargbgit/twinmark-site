@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twinmark privacy policy</title>
+    <meta name="description" content="How Twinmark, a markdown editor for Windows, handles your information." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="name" href="./">Twinmark</a>
+      <nav aria-label="Pages">
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="https://github.com/shargbgit/twinmark-site/issues">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Twinmark privacy policy</h1>
+      <p class="lead">Effective 30 October 2026. Twinmark is published by GS VectorShell.</p>
+
+      <p>
+        Twinmark is a markdown editor for Windows. It's built to work on your computer: it has no accounts, no
+        advertising, and no analytics or telemetry, and GS VectorShell doesn't receive your documents or anything
+        about how you use the app.
+      </p>
+
+      <h2>What stays on your computer</h2>
+      <ul>
+        <li><strong>Your documents</strong> are files you open and save; Twinmark reads and writes them where you choose.</li>
+        <li>
+          <strong>Version history and crash recovery:</strong> Twinmark keeps earlier versions of the documents you edit,
+          and copies of unsaved changes so they can be recovered after a crash, in your Windows user profile.
+        </li>
+        <li>
+          <strong>Settings:</strong> your preferences, the list of recently opened files, your own templates, and a record
+          of which text the AI assistant wrote (so it can be marked as such), in your Windows user profile.
+        </li>
+        <li><strong>API keys</strong> for AI providers, if you enter any, are stored in Windows Credential Manager, never in a file.</li>
+        <li><strong>Spelling suggestions</strong> come from Windows' own spell checker, on your computer.</li>
+        <li>
+          <strong>Pictures</strong> in your documents are shown only from your document's own folder. Opening a document
+          never contacts other websites, and Twinmark doesn't check links online.
+        </li>
+      </ul>
+      <p>You can delete this data at any time, for example by uninstalling Twinmark or removing its folders.</p>
+
+      <h2>When Twinmark uses the internet</h2>
+      <p>Twinmark connects to the internet only in these cases, each one started by you:</p>
+      <ul>
+        <li>
+          <strong>Downloading an AI model.</strong> If you choose to download a model for the assistant in AI Settings,
+          Twinmark downloads it from Hugging Face (huggingface.co). Like any download, Hugging Face sees your
+          computer's IP address and that the request comes from Twinmark. After that, the assistant runs on your
+          computer, and nothing you write leaves it.
+        </li>
+        <li>
+          <strong>Using a cloud AI provider.</strong> The AI assistant is off until you turn it on. If you choose OpenAI or
+          Azure OpenAI as its provider, with your own API key, Twinmark asks for your consent the first time. After
+          that, each time you ask the assistant for something, the text it works on (the selection, or the document
+          and its outline) and your request are sent to that provider and handled under its own terms and privacy
+          policy. Nothing is sent to a provider unless you choose one and agree.
+        </li>
+        <li>
+          <strong>Buying Twinmark, and its free trial.</strong> The Microsoft Store handles the trial, the purchase and the
+          license. Twinmark asks Windows whether it's licensed; Microsoft's privacy statement covers what the Store does.
+        </li>
+      </ul>
+
+      <h2>Microsoft components</h2>
+      <p>
+        Twinmark runs on Windows and uses Microsoft components, such as Microsoft Edge WebView2 to display its editor
+        and the Microsoft Store for licensing. They follow your Windows settings and are covered by the
+        <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.
+      </p>
+
+      <h2>This website</h2>
+      <p>
+        This website has no cookies, analytics or scripts. It's hosted on GitHub Pages, and GitHub logs visitors' IP
+        addresses for security, as described in the
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.
+      </p>
+
+      <h2>Children</h2>
+      <p>Twinmark isn't directed at children and doesn't knowingly collect any information from anyone.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published at this address with a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: ask on the <a href="https://github.com/shargbgit/twinmark-site/issues">Issues page</a>
+        of this website's repository. Issues are public, so please don't include anything private.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2026 GS VectorShell &middot; <a href="./">Twinmark</a></p>
+    </footer>
+  </body>
+</html>
