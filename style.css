@@ -54,8 +54,21 @@ header .name {
   text-decoration: none;
 }
 
-nav a {
-  margin-left: 16px;
+header .name:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px 14px;
+}
+
+nav a[aria-current="page"] {
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 main {
