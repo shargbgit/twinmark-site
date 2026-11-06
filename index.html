@@ -4,49 +4,296 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Twinmark: a markdown editor for Windows</title>
-    <meta name="description" content="Twinmark is a markdown editor for Windows with source and visual panes side by side, kept in step as you type." />
+    <meta name="description" content="Twinmark is a markdown editor for Windows with source and visual panes side by side, kept in step as you type. Made for documentation that ends up on GitLab and GitHub." />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="media/icon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="media/icon-256.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Twinmark" />
+    <meta property="og:title" content="Twinmark: markdown, two ways at once" />
+    <meta property="og:description" content="A markdown editor for Windows with the source and a visual editor side by side, kept in step as you type." />
+    <meta property="og:url" content="https://shargbgit.github.io/twinmark-site/" />
+    <meta property="og:image" content="https://shargbgit.github.io/twinmark-site/media/social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip" href="#main">Skip to the content</a>
     <header>
-      <a class="name" href="./">Twinmark</a>
+      <a class="name" href="./">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><g fill="#99f6e4"><rect x="12" y="31" width="14" height="2.5" rx="1" /><rect x="12" y="37" width="10" height="2.5" rx="1" /><rect x="12" y="43" width="13" height="2.5" rx="1" /></g><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /><g fill="#94a3b8"><rect x="37" y="28" width="15" height="2.5" rx="1" /><rect x="37" y="34" width="12" height="2.5" rx="1" /><rect x="37" y="40" width="15" height="2.5" rx="1" /></g><path d="M14.6 19.5l-1 7.5M17.8 19.5l-1 7.5M12.3 22h7M12 25h7" stroke="#5eead4" stroke-width="1.7" stroke-linecap="round" /></svg>
+        Twinmark
+      </a>
       <nav aria-label="Pages">
         <a href="./" aria-current="page">Home</a>
+        <a href="tour.html">Tour</a>
+        <a href="whats-next.html">What's next</a>
         <a href="privacy.html">Privacy</a>
         <a href="https://github.com/shargbgit/twinmark-site/issues">Contact</a>
+        <a class="store" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Get Twinmark</a>
       </nav>
     </header>
-    <main>
-      <h1>Twinmark</h1>
-      <p class="lead">A markdown editor for Windows, with the source and a visual editor side by side, kept in step as you type.</p>
 
-      <p>
-        Twinmark is made for documentation that ends up on GitLab and GitHub. Write in the markdown source, in a
-        visual editor that looks like the finished page, or both at once; only the part you change is rewritten, so
-        your markdown keeps its own spacing and style.
-      </p>
+    <main id="main" class="wide">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="inner">
+          <a class="pill" href="whats-next.html"><b>1.0</b> Now in the Microsoft Store &middot; see what's coming next</a>
+          <h1 id="hero-title">Markdown, <span class="grad">two ways at&nbsp;once.</span></h1>
+          <p class="lead">
+            Write the markdown, or the page it becomes, or both side by side. Twinmark keeps the two in step as you type
+            and rewrites only what you change, for documentation that ends up on GitLab and GitHub.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.2 11.2a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8z" /><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8" /></svg>
+              Get it from the Microsoft Store
+            </a>
+            <a class="btn" href="tour.html">Take the tour <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <p class="fineprint">Free trial &middot; Windows 10 (version 1809 or later) and Windows 11, 64-bit &middot; No account needed</p>
 
-      <h2>What it does</h2>
-      <ul>
-        <li>Source and visual panes side by side, kept in step as you type, and the visual pane in a window of its own for a second monitor.</li>
-        <li>Tables edited like tables, and a table of contents that keeps itself up to date.</li>
-        <li>Checks for broken links, accessibility, readability and markdown that won't look the same on GitLab and GitHub, with quick fixes.</li>
-        <li>An optional AI assistant, on your computer or with your own OpenAI or Azure OpenAI key; every change it suggests waits for your approval.</li>
-        <li>Version history, crash recovery and Auto Save; export to HTML, PDF and Word.</li>
-        <li>No account, no ads, no tracking: your documents stay on your computer.</li>
-      </ul>
+          <figure class="stage clip glow">
+            <div class="window">
+              <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/sync-poster.jpg" aria-label="Twinmark recorded while a section is written in the markdown pane and a sentence in the visual pane">
+                <source src="media/sync-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" />
+                <source src="media/sync.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+              </video>
+              <picture class="still">
+                <source srcset="media/sync-dark.jpg" media="(prefers-color-scheme: dark)" />
+                <img src="media/sync.jpg" width="1280" height="768" alt="Twinmark with a release guide: markdown in the left pane, the same document formatted in the right pane." />
+              </picture>
+            </div>
+            <figcaption>
+              Recorded in Twinmark 1.0. A section typed as markdown on the left appears formatted on the right; a sentence
+              typed on the right, with <code>**bold**</code>, appears as markdown on the left; a task ticked on the right is
+              ticked in the markdown.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-      <h2>Get it</h2>
-      <p>Twinmark is available in the Microsoft Store for Windows 10 (version 1809 or later) and Windows 11, 64-bit, with a free trial.</p>
+      <section class="band alt" aria-labelledby="twin-title">
+        <div class="inner">
+          <div class="section-head center reveal">
+            <p class="eyebrow">Two panes, one document</p>
+            <h2 id="twin-title">Type in either pane. The other keeps&nbsp;up.</h2>
+            <p>
+              The markdown is the document. Change it as text, or as the finished page, and Twinmark rewrites only the
+              lines you touched, so your spacing, list markers and tables stay just as you wrote them.
+            </p>
+          </div>
+          <div class="twin reveal" aria-hidden="true">
+            <div class="pane src">
+              <span class="ln" style="--n: 15; --anim: l1"><span class="m">#</span> Release guide</span>
+              <span class="ln" style="--n: 20; --anim: l2">Ship on <span class="m">**</span>Tuesdays<span class="m">**</span>.</span>
+              <span class="ln" style="--n: 24; --anim: l3"><span class="m">- [x]</span> Merge into <span class="m">`</span>main<span class="m">`</span></span>
+              <span class="ln" style="--n: 18; --anim: l4"><span class="m">- [ ]</span> Tag <span class="m">`</span>v2.4.0<span class="m">`</span></span>
+            </div>
+            <div class="bridge"><svg viewBox="0 0 46 236" preserveAspectRatio="none"><path d="M4 60 C 20 60, 26 70, 42 70" /><path d="M4 118 C 20 118, 26 112, 42 112" /><path d="M4 176 C 20 176, 26 164, 42 164" /></svg></div>
+            <div class="pane page">
+              <div class="h" style="--anim: r1">Release guide</div>
+              <p style="--anim: r2">Ship on <b>Tuesdays</b>.</p>
+              <div class="task" style="--anim: r3"><i class="on"></i> Merge into <code>main</code></div>
+              <div class="task" style="--anim: r4"><i></i> Tag <code>v2.4.0</code></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2>Questions</h2>
-      <p>
-        Ask on the <a href="https://github.com/shargbgit/twinmark-site/issues">Issues page</a>. Issues are public, so
-        please don't include anything private.
-      </p>
+      <section class="band" aria-labelledby="features-title">
+        <div class="inner">
+          <div class="section-head reveal">
+            <p class="eyebrow">What's in 1.0</p>
+            <h2 id="features-title">Everything a long document needs</h2>
+            <p>From the first heading to the export, with checks that know how GitLab and GitHub will show it.</p>
+          </div>
+          <div class="cards">
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3" /><path d="M12 4v16M6.5 8.5h3M6.5 12h2M14.5 8.5h3.5M14.5 12h3M14.5 15.5h2.5" /></svg></div>
+              <h3><a class="cover" href="tour.html#panes">Two panes, in step</a></h3>
+              <p>The source and a visual editor side by side, or either one on its own. The block you're editing is highlighted in both.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5" /><path d="M3 9.5h18M3 15h18M9.5 4v16M15.5 4v16" /></svg></div>
+              <h3><a class="cover" href="tour.html#tables">Tables, edited as tables</a></h3>
+              <p>Add, move and align rows and columns with a toolbar. The markdown stays neatly lined up.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z" /><path d="M8.5 12.2l2.4 2.4 4.6-4.8" /></svg></div>
+              <h3><a class="cover" href="tour.html#checks">Checked for GitLab and GitHub</a></h3>
+              <p>Broken links, headings out of order, missing alt text, hard sentences, and markdown the sites show differently, with fixes.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 4.6 4.6 1.9-4.6 1.9L12 16.5l-1.9-4.6L5.5 10l4.6-1.9z" /><path d="M18.5 15.5l.8 1.9 1.9.8-1.9.8-.8 1.9-.8-1.9-1.9-.8 1.9-.8z" /></svg></div>
+              <h3><a class="cover" href="tour.html#assistant">An assistant that asks first</a> <span class="tag">Optional</span></h3>
+              <p>Shorten, simplify, proofread or review, on your own computer or with your own key. Nothing changes until you accept.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" /><path d="M15 15l5 5M8 10.5h5M10.5 8v5" /></svg></div>
+              <h3><a class="cover" href="tour.html#palette">Find your way</a></h3>
+              <p>An outline, a command palette, find and replace, templates, and a table of contents that keeps itself up to date.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7" /><path d="M4 4v4.5h4.5M12 8v4l2.8 2" /></svg></div>
+              <h3><a class="cover" href="tour.html#safe">Your work is safe</a></h3>
+              <p>Version history, recovery of unsaved changes after a crash, and Auto Save if you want it.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M12 18v-6M9.5 15.5L12 18l2.5-2.5" /></svg></div>
+              <h3><a class="cover" href="tour.html#safe">Export when you share</a></h3>
+              <p>HTML, PDF and Word, with your pictures included. Saving keeps each file's encoding and line endings.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="11" height="9" rx="1.5" /><rect x="10.5" y="9" width="11" height="9" rx="1.5" /><path d="M5 18h4M14 21.5h4" /></svg></div>
+              <h3><a class="cover" href="tour.html#more">Two monitors, two themes</a></h3>
+              <p>Give the visual pane a window of its own on a second screen. Light or dark, and sharp at every scale.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band alt" aria-labelledby="checks-title">
+        <div class="inner split">
+          <div class="reveal">
+            <p class="eyebrow">Checked as you write</p>
+            <h2 id="checks-title">Know how it'll look on GitLab before you push</h2>
+            <p>
+              Twinmark reads your markdown the way GitLab and GitHub do, and tells you when they won't show what you see.
+              Most problems have a fix one click away.
+            </p>
+            <ul class="ticks">
+              <li>Links to headings that aren't there</li>
+              <li>Headings that skip a level, pictures without alt text</li>
+              <li>HTML that GitLab removes, and what to use instead</li>
+              <li>Reading level, long sentences and the passive voice</li>
+            </ul>
+            <div class="actions"><a class="btn" href="tour.html#checks">Watch the checks at work <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+          <figure class="clip glow reveal">
+            <div class="window"><img src="media/checks.jpg" width="1280" height="768" loading="lazy" alt="Twinmark's problems panel under the two panes, after its fixes: the link now goes to the Environments heading, and the underline is written the way GitLab keeps it." /></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="ai-title">
+        <div class="inner split flip">
+          <div class="reveal">
+            <p class="eyebrow">Optional, and on your side</p>
+            <h2 id="ai-title">An assistant that runs on your computer</h2>
+            <p>
+              Download a model once and the assistant works offline, with nothing you write leaving your computer. Or use
+              OpenAI or Azure OpenAI with your own key, once you've agreed to it.
+            </p>
+            <ul class="ticks">
+              <li>Shorten, expand, simplify, make formal, fix spelling</li>
+              <li>Review the writing, the structure and accessibility</li>
+              <li>Every suggestion shown as a change you accept or discard</li>
+              <li>Its changes are never saved for you, and stay marked as its own</li>
+            </ul>
+            <div class="actions"><a class="btn" href="tour.html#assistant">See it simplify a sentence <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+          <figure class="clip glow reveal">
+            <div class="window"><img src="media/assistant.jpg" width="1280" height="768" loading="lazy" alt="Twinmark's assistant panel beside the document, after the long sentence it simplified was accepted into the document." /></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band alt" aria-labelledby="themes-title">
+        <div class="inner">
+          <div class="section-head center reveal">
+            <p class="eyebrow">Made for Windows</p>
+            <h2 id="themes-title">Light or dark, like the rest of your desktop</h2>
+            <p>Twinmark follows your Windows theme, or the one you choose, and stays sharp on every monitor.</p>
+          </div>
+          <div class="window themes reveal">
+            <img src="media/panes-light.jpg" width="1600" height="900" loading="lazy" alt="Twinmark in its light and dark themes, a line moving between them: the same release guide, with a table toolbar over a table in the visual pane." />
+            <img class="over" src="media/panes-dark.jpg" width="1600" height="900" loading="lazy" alt="" />
+            <span class="seam" aria-hidden="true"></span>
+            <span class="label l" aria-hidden="true">Light</span>
+            <span class="label r" aria-hidden="true">Dark</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="promise-title">
+        <div class="inner">
+          <div class="section-head center reveal">
+            <p class="eyebrow">Private by design</p>
+            <h2 id="promise-title">Your documents stay on your computer</h2>
+          </div>
+          <div class="promise reveal">
+            <div><span class="big">0</span><p>accounts to make. Open a file and start writing.</p></div>
+            <div><span class="big">0</span><p>ads. You buy Twinmark once, after a free trial.</p></div>
+            <div><span class="big">0</span><p>trackers or analytics, in the app or on this website.</p></div>
+          </div>
+          <p class="center fineprint">The details are in the <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="soon-title">
+        <div class="inner">
+          <div class="soon reveal">
+            <svg class="art" viewBox="0 0 440 300" aria-hidden="true">
+              <rect class="box" x="20" y="40" width="110" height="46" rx="8" /><text x="50" y="69">Merge</text>
+              <rect class="box" x="170" y="40" width="110" height="46" rx="8" /><text x="196" y="69">Staging</text>
+              <path class="box" d="M380 20l52 43-52 43-52-43z" /><text x="355" y="68">Tests?</text>
+              <rect class="box" x="170" y="190" width="110" height="46" rx="8" /><text x="203" y="219">Fix it</text>
+              <path class="wire" d="M130 63h40" /><path class="wire w2" d="M280 63h48" /><path class="wire w3" d="M380 106v107H280M170 213h-60V86" />
+            </svg>
+            <p class="eyebrow">Stay tuned &middot; Twinmark 1.1</p>
+            <h2 id="soon-title">Equations, diagrams and more are on their way</h2>
+            <p>The next version is taking shape: equations you type as they look, diagrams you change by clicking them, a Files panel, and a find and replace that works in both panes.</p>
+            <ul class="chips">
+              <li>Equations</li>
+              <li>Mermaid diagrams and charts</li>
+              <li>Files panel</li>
+              <li>Find and replace in both panes</li>
+              <li>Formatting bar</li>
+              <li>Word count</li>
+            </ul>
+            <div class="actions"><a class="btn" href="whats-next.html">See what's coming <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band alt" aria-labelledby="get-title">
+        <div class="inner center reveal">
+          <div class="section-head center">
+            <h2 id="get-title">Try it free</h2>
+            <p>Twinmark is in the Microsoft Store with a free trial in which everything works, the AI assistant and the second window included.</p>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.2 11.2a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8z" /><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8" /></svg>
+              Get it from the Microsoft Store
+            </a>
+          </div>
+          <p class="fineprint">Windows 10 (version 1809 or later) and Windows 11, 64-bit.</p>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2026 GS VectorShell &middot; <a href="privacy.html">Privacy policy</a></p>
+
+    <footer class="wide">
+      <div class="foot">
+        <div>
+          <a class="name" href="./">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /></svg>
+            Twinmark
+          </a>
+          <p>&copy; 2026 GS VectorShell. This website has no cookies, analytics or scripts.</p>
+        </div>
+        <ul>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="whats-next.html">What's next</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="https://github.com/shargbgit/twinmark-site/issues">Questions and ideas</a></li>
+          <li><a href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Microsoft Store</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

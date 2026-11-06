@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coming in Twinmark 1.1</title>
+    <meta name="description" content="A first look at Twinmark 1.1, in development: equations typed as they look, Mermaid diagrams changed by clicking them, a Files panel, and find and replace in both panes." />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="media/icon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="media/icon-256.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Twinmark" />
+    <meta property="og:title" content="Coming in Twinmark 1.1" />
+    <meta property="og:description" content="Equations, diagrams, a Files panel and more: a first look at the next version of Twinmark." />
+    <meta property="og:url" content="https://shargbgit.github.io/twinmark-site/whats-next.html" />
+    <meta property="og:image" content="https://shargbgit.github.io/twinmark-site/media/social-next.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to the content</a>
+    <header>
+      <a class="name" href="./">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><g fill="#99f6e4"><rect x="12" y="31" width="14" height="2.5" rx="1" /><rect x="12" y="37" width="10" height="2.5" rx="1" /><rect x="12" y="43" width="13" height="2.5" rx="1" /></g><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /><g fill="#94a3b8"><rect x="37" y="28" width="15" height="2.5" rx="1" /><rect x="37" y="34" width="12" height="2.5" rx="1" /><rect x="37" y="40" width="15" height="2.5" rx="1" /></g><path d="M14.6 19.5l-1 7.5M17.8 19.5l-1 7.5M12.3 22h7M12 25h7" stroke="#5eead4" stroke-width="1.7" stroke-linecap="round" /></svg>
+        Twinmark
+      </a>
+      <nav aria-label="Pages">
+        <a href="./">Home</a>
+        <a href="tour.html">Tour</a>
+        <a href="whats-next.html" aria-current="page">What's next</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/shargbgit/twinmark-site/issues">Contact</a>
+        <a class="store" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Get Twinmark</a>
+      </nav>
+    </header>
+
+    <main id="main" class="wide">
+      <section class="hero small" aria-labelledby="next-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="inner">
+          <p class="pill"><b>1.1</b> In development &middot; stay tuned</p>
+          <h1 id="next-title">Coming in Twinmark&nbsp;1.1: <span class="grad">equations, diagrams and&nbsp;more</span></h1>
+          <p class="lead">
+            The next version is taking shape. Here's a first look, recorded in the version being built now: equations you
+            type as they look, diagrams you change by clicking them, a Files panel, and find and replace in both panes.
+          </p>
+          <p class="disclaimer">
+            Twinmark 1.1 isn't out yet. What's on this page is work in progress, and may change before it's released.
+            When it's ready, it will come as an update through the Microsoft Store.
+          </p>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="eq-title">
+        <div class="inner split">
+          <div class="reveal">
+            <p class="eyebrow">Equations</p>
+            <h2 id="eq-title">Equations, typed as they look</h2>
+            <p>
+              Type <code>/</code> for a fraction, <code>^</code> for a power, <code>\</code> for any command, or pick from
+              135 templates and symbols. What goes in the document is LaTeX that GitLab and GitHub typeset, and an
+              equation you don't change is kept exactly as you wrote it.
+            </p>
+            <ul class="ticks">
+              <li>In a sentence (<code>$...$</code>) or on a line of its own</li>
+              <li>The LaTeX shown as you type, or typed yourself if you prefer</li>
+              <li>Checks for equations GitLab and GitHub won't show as you meant</li>
+              <li>Exported to Word as Word's own equations, which you can edit there</li>
+            </ul>
+          </div>
+          <figure class="clip glow reveal">
+            <div class="window">
+              <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/equations-poster.jpg" aria-label="An equation typed in the equation box with a fraction from the picker, and a second one picked from the examples">
+                <source src="media/equations.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+              </video>
+              <img class="still" src="media/equations.jpg" width="1280" height="768" loading="lazy" alt="Two equations typeset in the visual pane, r equals f over n, and the mean of x, with their LaTeX in math blocks in the markdown." />
+            </div>
+            <figcaption>"r =", a fraction from the picker, f, Tab, n; then the mean, one click from the examples. The markdown gets <code>```math</code> blocks.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band alt" aria-labelledby="diagram-title">
+        <div class="inner split flip">
+          <div class="reveal">
+            <p class="eyebrow">Diagrams and charts</p>
+            <h2 id="diagram-title">Diagrams you change by clicking them</h2>
+            <p>
+              Flowcharts, sequence diagrams, pie, bar and line charts, and Gantt charts, drawn from Mermaid code as GitLab
+              and GitHub draw them. Click a box to rename it, add the next one, or drag from its edge to connect it; charts
+              have a form for their data. The code is written for you, one undo step at a time.
+            </p>
+            <ul class="ticks">
+              <li>Starters for each kind, from the toolbar</li>
+              <li>The flowchart's direction and shapes on its own toolbar</li>
+              <li>Lines you wrote yourself, such as styles, kept as they were</li>
+              <li>Exported as pictures to HTML, PDF and Word</li>
+            </ul>
+          </div>
+          <figure class="clip glow reveal">
+            <div class="window">
+              <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/diagrams-poster.jpg" aria-label="A flowchart changed by clicking it: two boxes added, one connected back by dragging, and a box renamed">
+                <source src="media/diagrams.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+              </video>
+              <img class="still" src="media/diagrams.jpg" width="1280" height="768" loading="lazy" alt="A release flowchart with Merge to main, Staging, a Tests pass decision, Production, Monitor and a Fix it box looping back to Staging, and its Mermaid code beside it." />
+            </div>
+            <figcaption>Monitor added after Production, Fix it after the decision and dragged back to Staging, and Merge renamed; the Mermaid code follows each change.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="files-title">
+        <div class="inner split">
+          <div class="reveal">
+            <p class="eyebrow">Files, and find and replace</p>
+            <h2 id="files-title">A Files panel, and find and replace in both panes</h2>
+            <p>
+              The markdown files in your document's folder, or its whole git repository, beside the outline: open, add and
+              rename them there. Find and replace now floats over whichever pane you're in, the visual one included.
+            </p>
+            <ul class="ticks">
+              <li>Told when the open file changes on disk, with a bar to reload it</li>
+              <li>Match case, whole words and regular expressions</li>
+              <li>Replace All as a single undo step</li>
+            </ul>
+          </div>
+          <figure class="clip glow reveal">
+            <div class="window">
+              <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/find-poster.jpg" aria-label="The Files panel opening deploy.md, and staging replaced with pre-production in the visual pane">
+                <source src="media/find.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+              </video>
+              <img class="still" src="media/find.jpg" width="1280" height="768" loading="lazy" alt="The Files panel listing the folder's markdown files, deploy.md open, and the find box over the visual pane after staging was replaced with pre-production." />
+            </div>
+            <figcaption>deploy.md opened from the Files panel; Ctrl+H in the visual pane replaces every "staging" with "pre-production" at once.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band alt" aria-labelledby="small-title">
+        <div class="inner">
+          <div class="section-head reveal">
+            <p class="eyebrow">And smaller things</p>
+            <h2 id="small-title">Details that add up</h2>
+          </div>
+          <div class="cards three">
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="3" /><path d="M7.5 10v4M7.5 10h1.6a1.2 1.2 0 0 1 0 2.4H7.5h1.9a1.2 1.2 0 0 1 0 2.4H7.5M13 10l-1 4M16 10.2l1.8 3.8" /></svg></div>
+              <h3>A formatting bar</h3>
+              <p>Bold, italic, links and more over text you select in the visual pane.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13" /></svg></div>
+              <h3>Word count</h3>
+              <p>Words beside the characters in the status bar, and the selection's.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14" /></svg></div>
+              <h3>Colours in code blocks</h3>
+              <p>Code in the visual pane coloured for its language, in light and dark.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="11" height="9" rx="1.5" /><rect x="10.5" y="9" width="11" height="9" rx="1.5" /><path d="M13 12h6M13 15h4" /></svg></div>
+              <h3>Panels on the second monitor</h3>
+              <p>The outline, Files and the assistant can go with the visual pane's own window.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.9 4.6 4.6 1.9-4.6 1.9L12 16.5l-1.9-4.6L5.5 10l4.6-1.9z" /><path d="M4 20h16" /></svg></div>
+              <h3>The assistant, more precise</h3>
+              <p>It works on exactly what you select, and the visual pane's cursor shows in the source.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" /></svg></div>
+              <h3>More markdown files</h3>
+              <p><code>.mdown</code>, <code>.mkd</code> and <code>.mkdn</code> open as easily as <code>.md</code>.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="tuned-title">
+        <div class="inner">
+          <div class="soon reveal">
+            <svg class="art" viewBox="0 0 440 300" aria-hidden="true">
+              <rect class="box" x="20" y="40" width="110" height="46" rx="8" /><text x="56" y="69">1.0</text>
+              <rect class="box" x="170" y="40" width="110" height="46" rx="8" /><text x="206" y="69">1.1</text>
+              <path class="box" d="M380 20l52 43-52 43-52-43z" /><text x="364" y="68">You?</text>
+              <path class="wire" d="M130 63h40" /><path class="wire w2" d="M280 63h48" />
+            </svg>
+            <p class="eyebrow">Stay tuned</p>
+            <h2 id="tuned-title">Have an idea for Twinmark?</h2>
+            <p>
+              Tell us on the Issues page: what you'd like next, or what gets in your way. Issues are public, so please don't
+              include anything private. In the meantime, Twinmark 1.0 is in the Microsoft Store.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/shargbgit/twinmark-site/issues">Share an idea <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Get Twinmark 1.0</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wide">
+      <div class="foot">
+        <div>
+          <a class="name" href="./">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /></svg>
+            Twinmark
+          </a>
+          <p>&copy; 2026 GS VectorShell. This website has no cookies, analytics or scripts.</p>
+        </div>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="https://github.com/shargbgit/twinmark-site/issues">Questions and ideas</a></li>
+          <li><a href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Microsoft Store</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

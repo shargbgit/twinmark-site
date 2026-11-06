@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A tour of Twinmark 1.0</title>
+    <meta name="description" content="Twinmark 1.0 at work: two panes kept in step, tables edited as tables, checks for GitLab and GitHub, an AI assistant that asks first, and a command palette." />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="media/icon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="media/icon-256.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Twinmark" />
+    <meta property="og:title" content="A tour of Twinmark 1.0" />
+    <meta property="og:description" content="Recorded in the app: two panes kept in step, tables, checks for GitLab and GitHub, and an assistant that runs on your computer." />
+    <meta property="og:url" content="https://shargbgit.github.io/twinmark-site/tour.html" />
+    <meta property="og:image" content="https://shargbgit.github.io/twinmark-site/media/social.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to the content</a>
+    <header>
+      <a class="name" href="./">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><g fill="#99f6e4"><rect x="12" y="31" width="14" height="2.5" rx="1" /><rect x="12" y="37" width="10" height="2.5" rx="1" /><rect x="12" y="43" width="13" height="2.5" rx="1" /></g><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /><g fill="#94a3b8"><rect x="37" y="28" width="15" height="2.5" rx="1" /><rect x="37" y="34" width="12" height="2.5" rx="1" /><rect x="37" y="40" width="15" height="2.5" rx="1" /></g><path d="M14.6 19.5l-1 7.5M17.8 19.5l-1 7.5M12.3 22h7M12 25h7" stroke="#5eead4" stroke-width="1.7" stroke-linecap="round" /></svg>
+        Twinmark
+      </a>
+      <nav aria-label="Pages">
+        <a href="./">Home</a>
+        <a href="tour.html" aria-current="page">Tour</a>
+        <a href="whats-next.html">What's next</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/shargbgit/twinmark-site/issues">Contact</a>
+        <a class="store" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Get Twinmark</a>
+      </nav>
+    </header>
+
+    <main id="main" class="wide">
+      <section class="hero small" aria-labelledby="tour-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="inner">
+          <p class="eyebrow">The tour</p>
+          <h1 id="tour-title">See Twinmark 1.0 <span class="grad">at work</span></h1>
+          <p class="lead">
+            Every clip on this page was recorded in Twinmark 1.0, the version in the Microsoft Store, editing a sample
+            release guide. Nothing is mocked up; the pointer is drawn in so you can follow it.
+          </p>
+        </div>
+      </section>
+
+      <div class="inner tour">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <ol>
+            <li><a href="#panes">Two panes, in step</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#checks">Checks and fixes</a></li>
+            <li><a href="#assistant">The assistant</a></li>
+            <li><a href="#palette">Finding your way</a></li>
+            <li><a href="#safe">Your work is safe</a></li>
+            <li><a href="#more">And more</a></li>
+          </ol>
+        </aside>
+
+        <div>
+          <section class="chapter" id="panes" aria-labelledby="panes-title">
+            <p class="eyebrow">1 &middot; Writing</p>
+            <h2 id="panes-title">Two panes, kept in step</h2>
+            <p>
+              Type markdown on the left and the page appears on the right; type on the page and the markdown is written
+              for you. Only the part you change is rewritten, so the rest of the file stays exactly as it was.
+            </p>
+            <figure class="clip glow">
+              <div class="window">
+                <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/sync-poster.jpg" aria-label="A section typed in the markdown pane, and a sentence with bold typed in the visual pane">
+                  <source src="media/sync-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" />
+                  <source src="media/sync.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+                </video>
+                <picture class="still">
+                  <source srcset="media/sync-dark.jpg" media="(prefers-color-scheme: dark)" />
+                  <img src="media/sync.jpg" width="1280" height="768" alt="The release guide after the edits: a Rolling back section with a code block, and a sentence with bold, in both panes." />
+                </picture>
+              </div>
+              <figcaption>A "Rolling back" section typed as markdown, with bold and a code block; a sentence typed in the visual pane with <code>**release lead**</code>; a task ticked.</figcaption>
+            </figure>
+            <ul class="more">
+              <li><b>Either pane, or both</b>Source, visual, or side by side, switched from the toolbar.</li>
+              <li><b>The block you're in</b>Highlighted in both panes, which scroll to keep it in view.</li>
+              <li><b>An outline</b>Every heading, to jump to; it follows the document as you type.</li>
+              <li><b>Your file, as it was</b>Its encoding and line endings kept when it's saved.</li>
+            </ul>
+          </section>
+
+          <section class="chapter" id="tables" aria-labelledby="tables-title">
+            <p class="eyebrow">2 &middot; Tables</p>
+            <h2 id="tables-title">Tables, edited as tables</h2>
+            <p>
+              Click into a table and a toolbar appears: add rows and columns, move them, align them. Tab goes from cell to
+              cell. In the markdown, the table stays lined up, so it's as easy to read there as on the page.
+            </p>
+            <figure class="clip glow">
+              <div class="window">
+                <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/tables-poster.jpg" aria-label="A row added to a table and filled in with Tab, a column centred, and the row moved down">
+                  <source src="media/tables.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+                </video>
+                <img class="still" src="media/tables.jpg" width="1280" height="768" loading="lazy" alt="A table of environments with a new Hotfix row, its last column centred, lined up in the markdown on the left." />
+              </div>
+              <figcaption>A Hotfix row added below Staging and filled in with Tab, the last column centred, and the row moved down; the markdown on the left stays lined up.</figcaption>
+            </figure>
+          </section>
+
+          <section class="chapter" id="checks" aria-labelledby="checks-title">
+            <p class="eyebrow">3 &middot; Checks</p>
+            <h2 id="checks-title">Checked for GitLab and GitHub, with fixes</h2>
+            <p>
+              The problems panel (Ctrl+Shift+M) lists what won't work where your document is going: links to headings that
+              aren't there, headings that skip a level, HTML that GitLab removes, link text that says nothing. Fix them one
+              at a time, or all at once.
+            </p>
+            <figure class="clip glow">
+              <div class="window">
+                <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/checks-poster.jpg" aria-label="The problems panel opened, and three problems fixed with their Fix buttons">
+                  <source src="media/checks.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+                </video>
+                <img class="still" src="media/checks.jpg" width="1280" height="768" loading="lazy" alt="The problems panel after three fixes, with one problem left: the link text that says nothing about where it goes." />
+              </div>
+              <figcaption>A link to <code>#enviroments</code> corrected to <code>#environments</code>, <code>&lt;u&gt;</code> written as <code>&lt;ins&gt;</code>, which GitLab keeps, and a heading put back at the right level.</figcaption>
+            </figure>
+            <ul class="more">
+              <li><b>Links</b>Headings and anchors that aren't there, pictures that are missing.</li>
+              <li><b>Accessibility</b>Alt text, link text and heading order, with a score.</li>
+              <li><b>Readability</b>Reading level, long sentences and the passive voice.</li>
+              <li><b>Portability</b>Markdown and HTML that GitLab and GitHub show differently.</li>
+            </ul>
+          </section>
+
+          <section class="chapter" id="assistant" aria-labelledby="assistant-title">
+            <p class="eyebrow">4 &middot; The assistant</p>
+            <h2 id="assistant-title">An assistant that asks first</h2>
+            <p>
+              Select some text and pick an action. The assistant's suggestion appears as a change, words taken out and put
+              in, and nothing in your document changes until you accept it. Here it runs entirely on the computer, with a
+              model downloaded once.
+            </p>
+            <figure class="clip glow">
+              <div class="window">
+                <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/assistant-poster.jpg" aria-label="A long sentence selected, Simplify chosen in the assistant panel, the suggestion shown as a change, and accepted">
+                  <source src="media/assistant.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+                </video>
+                <img class="still" src="media/assistant.jpg" width="1280" height="768" loading="lazy" alt="The simplified sentence in the document, after it was accepted from the assistant panel." />
+              </div>
+              <figcaption>Simplify, with the Qwen3.5 4B model on this computer. The wait while the model writes is sped up in this clip.</figcaption>
+            </figure>
+            <ul class="more">
+              <li><b>On your computer</b>A model you download once in AI Settings; then it works offline.</li>
+              <li><b>Or in the cloud</b>OpenAI or Azure OpenAI with your own key, after you agree.</li>
+              <li><b>Asks first</b>Every change is shown as a change; nothing happens until you accept.</li>
+              <li><b>Never saved for you</b>Auto Save waits for you to save an accepted change yourself.</li>
+            </ul>
+          </section>
+
+          <section class="chapter" id="palette" aria-labelledby="palette-title">
+            <p class="eyebrow">5 &middot; Getting around</p>
+            <h2 id="palette-title">Every command a search away</h2>
+            <p>
+              Ctrl+Shift+P opens the command palette: type a few letters of anything Twinmark does. Here it adds a table of
+              contents, which then keeps itself up to date when a heading changes.
+            </p>
+            <figure class="clip glow">
+              <div class="window">
+                <video class="motion" autoplay muted loop playsinline controls width="1280" height="768" poster="media/palette-poster.jpg" aria-label="The command palette adding a table of contents, which follows a heading renamed in the visual pane">
+                  <source src="media/palette.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+                </video>
+                <img class="still" src="media/palette.jpg" width="1280" height="768" loading="lazy" alt="A table of contents at the top of the release guide, its last line following the renamed heading Rolling back a release." />
+              </div>
+              <figcaption>"contents" in the palette adds a table of contents; renaming "Rolling back" to "Rolling back a release" updates its line.</figcaption>
+            </figure>
+            <ul class="more">
+              <li><b>Outline</b>Every heading, one click away (Ctrl+Shift+T).</li>
+              <li><b>Find and replace</b>In the document, with regular expressions if you want them.</li>
+              <li><b>Templates</b>Built in, and your own: any markdown file in your templates folder.</li>
+              <li><b>The / menu</b>Type / at the start of a line in the source for headings, lists, tables and more.</li>
+            </ul>
+          </section>
+
+          <section class="chapter" id="safe" aria-labelledby="safe-title">
+            <p class="eyebrow">6 &middot; Peace of mind</p>
+            <h2 id="safe-title">Your work is safe, and easy to share</h2>
+            <p>Twinmark keeps what you write, even when something goes wrong, and turns it into the file someone else needs.</p>
+            <div class="cards two">
+              <article class="card">
+                <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7" /><path d="M4 4v4.5h4.5M12 8v4l2.8 2" /></svg></div>
+                <h3>Version history</h3>
+                <p>Earlier versions of each document, compared line by line and restored in one step (File &gt; Version History).</p>
+              </article>
+              <article class="card">
+                <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z" /><path d="M12 8v5M12 16h.01" /></svg></div>
+                <h3>Crash recovery</h3>
+                <p>Unsaved changes are kept as you go, and offered back the next time Twinmark starts.</p>
+              </article>
+              <article class="card">
+                <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11l3 3v13H5z" /><path d="M8 4v5h7V4M8 20v-6h8v6" /></svg></div>
+                <h3>Auto Save</h3>
+                <p>A moment after each change, if you turn it on; it pauses after the assistant's changes.</p>
+              </article>
+              <article class="card">
+                <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M12 18v-6M9.5 15.5L12 18l2.5-2.5" /></svg></div>
+                <h3>HTML, PDF and Word</h3>
+                <p>A page that needs nothing else, a PDF, or a Word document with Word's own headings, lists and tables, pictures included.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="chapter" id="more" aria-labelledby="more-title">
+            <p class="eyebrow">7 &middot; And more</p>
+            <h2 id="more-title">Made for the way you work on Windows</h2>
+            <p>Click a picture to see it full size. Each is Twinmark 1.0, as it is in the Microsoft Store's listing.</p>
+            <div class="shots">
+              <a href="media/problems-light.jpg">
+                <div class="window"><img src="media/problems-light-small.jpg" width="800" height="450" loading="lazy" alt="The problems panel under the two panes, and a quick fix offered for a link to a heading that isn't there." /></div>
+                Problems listed under the panes, with quick fixes
+              </a>
+              <a href="media/palette-dark.jpg">
+                <div class="window"><img src="media/palette-dark-small.jpg" width="800" height="450" loading="lazy" alt="The command palette over the editor, in the dark theme." /></div>
+                The command palette, in the dark theme
+              </a>
+              <a href="media/assistant-dark.jpg">
+                <div class="window"><img src="media/assistant-dark-small.jpg" width="800" height="450" loading="lazy" alt="The assistant panel showing a suggested change, struck-out words in red and new words in green, with Accept and Discard." /></div>
+                A suggestion from the assistant, waiting for you
+              </a>
+            </div>
+            <ul class="more">
+              <li><b>A second monitor</b>The visual pane in a window of its own, beside the source on the other screen.</li>
+              <li><b>Sharp everywhere</b>Each window is drawn at its own monitor's scale.</li>
+              <li><b>Light and dark</b>Following Windows, or the theme you choose.</li>
+              <li><b>Big files</b>Files over 5 MB open quickly, with the visual pane paused until you want it.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <section class="band alt" aria-labelledby="get-title">
+        <div class="inner center">
+          <div class="section-head center">
+            <h2 id="get-title">Try it yourself</h2>
+            <p>Everything in this tour is in the free trial.</p>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://apps.microsoft.com/detail/9n55cl1nsf3v">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1.2 11.2a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8z" /><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8" /></svg>
+              Get it from the Microsoft Store
+            </a>
+            <a class="btn" href="whats-next.html">What's coming in 1.1 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wide">
+      <div class="foot">
+        <div>
+          <a class="name" href="./">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="8" width="56" height="48" rx="10" fill="#0f766e" /><rect x="9" y="14" width="21" height="36" rx="4" fill="#134e4a" /><rect x="34" y="14" width="21" height="36" rx="4" fill="#fff" /><rect x="37" y="19" width="14" height="4.5" rx="1" fill="#0f766e" /></svg>
+            Twinmark
+          </a>
+          <p>&copy; 2026 GS VectorShell. This website has no cookies, analytics or scripts.</p>
+        </div>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="whats-next.html">What's next</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="https://github.com/shargbgit/twinmark-site/issues">Questions and ideas</a></li>
+          <li><a href="https://apps.microsoft.com/detail/9n55cl1nsf3v">Microsoft Store</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
